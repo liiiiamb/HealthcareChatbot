@@ -1,0 +1,44 @@
+{"intents": [
+		{"tag":"greeting", 
+			"patterns":["Hello", "Hi", "It's nice to meet you", "Good morning", "Good afternoon", "Good evening", "Hey", "Start"], 
+			"responses":["Hello, I am a healthcare chatbot", "Hi there", "It's nice to meet you, I'm a healthcare chatbot", "Hello there, what assistance do you require?"],
+			"context_set": ""
+		},
+		{"tag":"goodbye", 
+			"patterns":["Goodbye", "Bye", "See you later", "Thanks goodbye", "Thankyou goodbye", "End"], 
+			"responses":["Goodbye, thankyou for using this service", "Goodbye", "Bye", "Have a nice day"]
+		},
+		{"tag":"appointment", 
+			"patterns":["Can i book an appointment?", "Book appointment", "Schedule appointment", "appointment", "Book", "Schedule"], 
+			"responses":["Sure, here is a link https://www.nhs.uk/contact-us/book-cancel-or-change-an-appointment/", "Sure, what time would you like to book?", "Of course, here is a link https://www.nhs.uk/contact-us/book-cancel-or-change-an-appointment/"]
+		},
+		{"tag":"cold symptoms", 
+			"patterns":["I have a blocked nose", "My nose is blocked", "I have a sore throat", "I have a cough", "I have a headache", "I have a raised temperature"], 
+			"responses":["It seems you have a cold", "It seems you have a cold, make sure you stay hydrated", "It seems you have a cold, you need to rest", "It seems you have a cold, you need to take some nasal drops, you can get them over the counter at any pharmacy", "It seems you have a cold, you need to take acetaminophen", "It seems you have a cold, you need to take ibroprufen", "Here is a link for advice https://www.mayoclinic.org/diseases-conditions/common-cold/in-depth/cold-remedies/art-20046403"]
+		},
+		{"tag":"diabetes symptoms",
+			"patterns":["I am more thirsty than usual", "I am urinating often", "I am losing weight", "I feel tired often", "I have mood changes", "I am having a lot of infections"], 
+			"responses":["You might have diabetes, here is more information https://www.nhs.uk/conditions/diabetes/, see your GP as soon as possible"]
+		},
+		{"tag":"heart disease symptoms", 
+			"patterns":["I am having chest pain", "My chest is tight", "I have a shortness of breath", "I have pain in my neck", "pain in jaw", "pain in back", "pain in throat", "There is a numbness in my legs"], 
+			"responses":["You might have heart disease, here is more information https://www.nhs.uk/conditions/coronary-heart-disease/, see your GP as soon as possible"]
+		},	
+		{"tag":"lung disease symptoms", 
+			"patterns":["I have had a cough for a long time", "I have a shortness of breath", "I have had mucus for a long time", "I am wheezing a lot", "I am coughing blood", "I have chest pain"], 
+			"responses":["You might have lung disease or chronic obstructive pulmonary disease (COPD), here is more information https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/"] 
+		},
+		{"tag":"cancer symptoms", 
+			"patterns":["I have had a cough for a long time", "I have pain after eating", "I am tired a lot", "I have a fever at night", "I have been having seizures", "I have s sore that has not healed", "I have swelling", "I have gained weight randomly", "I have lost weight randomly"], 
+			"responses":["It is possible you might have a form of cancer, here is more information https://www.nhs.uk/conditions/cancer/, please see your GP as soon as possible"]
+		},
+		{"tag":"meeting with a doctor", 
+			"patterns":["I would like to meet with a doctor", "Connect me with a doctor"], 
+			"responses":["Ok, please follow this link to communicate with a doctor https://www.nhs.uk/nhs-app/nhs-app-help-and-support/appointments-and-online-consultations-in-the-nhs-app/online-consultations/"]
+		},
+		{"tag":"contact information", 
+			"patterns":["What are the details to communicate with my GP", "Communicate with GP", "Contact GP", "Contact"], 
+			"responses":["Every GP has a different contact information, to find the details for your GP follow this link https://www.nhs.uk/contact-us/find-contact-details-gps-hospitals-and-other-services/"]
+		}
+	]
+}
